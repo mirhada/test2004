@@ -1,0 +1,66 @@
+@media (max-width: 1024px) {
+	.intro {
+  min-height: 800px;	
+	}
+}
+@media (max-width: 768px) {
+	h1 {
+		font-size: 35px;
+	}
+	p {
+		font-size: 14px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.motivation__item-text {
+    font-size: 17px;
+	}
+	.motivation__item {
+		width: 100%;
+		border-bottom: 1px solid #EDEDED;
+	}
+	.advantages__list {
+    flex-wrap: wrap;
+	}
+	.advantages__item {
+    width: 45%;
+	}
+	.form {
+		width: 80%;
+	}
+}
+@media (max-width: 500px) {
+	.intro__title {
+		font-size: 25px;
+	}
+	.advantages__item {
+    width: 100%;
+	}
+	.intro {
+ 	  min-height: 500px;	
+	}
+	.motivation-container {
+    width: 80%;
+  }
+  .matching {
+    width: 80%;
+	}
+	.form label {
+		width: 100%;
+		margin-left: 0;
+
+		&::after {
+			display: none;
+		}
+		&::before {
+			display: none;
+		}
+	}
+	.form input, .form textarea {
+		width: 100%;
+		font-size: 14px;
+		margin-left: 0;
+	}
+
+}

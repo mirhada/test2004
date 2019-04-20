@@ -1,0 +1,10 @@
+@import "../variables/fonts";
+
+@mixin regular-text() {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+}
+

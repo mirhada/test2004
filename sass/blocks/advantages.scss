@@ -1,0 +1,61 @@
+@import "../variables/colors";
+@import "../mixins/general";
+
+.advantages {
+	background-color: $grey-bg-color;
+	&__title {
+		padding-top: 10%;
+		padding-bottom: 7%;
+		font-size: 40px;
+		line-height: normal;
+		text-align: center;
+		letter-spacing: -0.02em;
+
+		color: #000000;
+	}
+	&__list {
+		@include list-unstyled;
+		display: flex;
+		justify-content: space-between;
+		width: 75%;
+		margin: 0 auto;
+		padding-bottom: 10%;
+	}
+	&__item {
+		width: 30%;
+		position: relative;
+		padding-top: 82px;
+
+		&::before {
+			content: url(../img/wallet.svg);
+			position: absolute;
+			width: 50px;
+			height: 52px;
+			top: -5px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 43px;
+			height: 2px;
+			top: 126px;
+
+			background: #F47821;
+		}
+		&-title {
+			font-size: 20px;
+			padding-bottom: 50px;
+			line-height: normal;
+
+			color: #000000;
+		}
+		&-text {
+			font-family: Roboto;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 26px;
+
+			color: #4E4D53;
+		}
+	}
+}

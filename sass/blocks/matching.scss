@@ -1,0 +1,21 @@
+.matching {
+	width: 54%;
+	margin: 0 auto;
+	
+	&__title {
+		margin-top: 5.5%;
+		margin-bottom: 5%;
+		font-size: 48px;
+		line-height: normal;
+		letter-spacing: -0.02em;
+	}
+	&__text {
+		margin-bottom: 7%;
+		font-family: Roboto;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 26px;
+
+		color: #4E4D53;
+	}
+}

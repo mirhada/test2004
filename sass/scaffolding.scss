@@ -1,0 +1,73 @@
+@import "variables/colors";
+@import "mixins/text";
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v19-cyrillic_latin-regular.woff2') format('woff2'), 
+       url('../fonts/roboto-v19-cyrillic_latin-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src: url('../fonts/DINPro.woff') format('woff')
+}
+
+
+html {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+
+  @include regular-text;
+}
+
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
